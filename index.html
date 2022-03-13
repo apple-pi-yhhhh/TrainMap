@@ -1,40 +1,56 @@
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>Subway Mapsサンプル</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
     <script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script>
+
     <style type="text/css">
-    body {
+    body
+    {
         font-family: Verdana;
         font-size: 8pt;
     }
+
     /* The main DIV for the map */
-    .subway-map {
+    .subway-map
+    {
         margin: 0;
         width: 500px;
         height:410px;
         background-color: white;
     }
+
     /* Text labels */
-    .text {
+    .text
+    {
         text-decoration: none;
         color: black;
     }
-    #legend {
+
+    #legend
+    {
         float: left;
         width: 250px;
         height:400px;
     }
-    #legend div {
+
+    #legend div
+    {
         height: 25px;
     }
-    #legend span {
+
+    #legend span
+    {
         margin: 5px 5px 5px 0;
     }
-    .subway-map span {
+    .subway-map span
+    {
         margin: 5px 5px 5px 0;
     }
+ 
     </style>
 </head>
 <body>
@@ -59,6 +75,7 @@
             <li data-coords="4,6" data-dir="N"></li>  
             <li data-coords="2,6"><a href="http://jqueryui.com/demos/tabs/">Tabs</a></li>  
         </ul>
+
         <ul data-color="#00ff00" data-label="jQuery Interactions" data-shiftCoords="0,-1">      
             <li data-coords="2,6"></li> 
             <li data-coords="2,5.9" data-marker="@interchange"> </li> <!-- marker-only node, moved up by 0.10 -->
@@ -68,11 +85,14 @@
             <li data-coords="7,5" data-dir="E" data-marker="station" data-labelPos="E"><a href="http://jqueryui.com/demos/droppable/">Droppable</a></li>  
             <li data-coords="7,1" data-marker="interchange" data-labelPos="W"><a href="http://jqueryui.com/demos/draggable/">Draggable</a></li>  
         </ul>
+
     </div>
     <div id="legend"></div>
     <a href="http://kachibito.net/web-design/subway-map-visualization.html">記事へ戻る</a> / via:<a href="http://www.kalyani.com/2010/10/subway-map-visualization-jquery-plugin/">Subway Map Visualization jQuery Plugin</a>
+
 <script type="text/javascript">
-	$(".subway-map").subwayMap({ debug: true });
-</script>
+        $(".subway-map").subwayMap({ debug: true });
+    </script>
+    
 </body>
 </html>
