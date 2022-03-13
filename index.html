@@ -1,0 +1,16 @@
+<head>
+	<script src="http://code.jquery.com/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="jquery.subwayMap-0.5.0.js" type="text/javascript"></script>
+</head>
+<body>
+	<div data-columns="12" data-rows="10" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="true" data-lineWidth="8">
+		<ul data-color="#ff4db2" data-label="jQuery Widgets">
+			<li data-coords="2,2"><a href="http://jqueryui.com/demos/accordion/">Accordion</a></li>
+			<li data-coords="4,2"><a href="http://jqueryui.com/demos/autocomplete/">Autocomplete</a></li>
+		</ul>
+	</div>
+	<div id="legend"></div>
+	<script type="text/javascript">
+		$(".subway-map").subwayMap({ debug: true });
+	</script>
+</body>
